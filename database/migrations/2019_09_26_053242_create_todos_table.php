@@ -17,6 +17,7 @@ class CreateTodosTable extends Migration
             $table->increments('id');
             $table->string('title');
             $table->timestamps();
+            $table->softDeletes();
         });
     }
 
